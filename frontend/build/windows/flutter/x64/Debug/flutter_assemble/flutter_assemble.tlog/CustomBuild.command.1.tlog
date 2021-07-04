@@ -1,0 +1,28 @@
+^G:\PROJECTS\ML-POWERED-GALLERY\FRONTEND\BUILD\WINDOWS\CMAKEFILES\304EDF2DD49B1553A00807AB4F3F7220\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter_windows_1.17.4-stable\flutter PROJECT_DIR=G:\Projects\ml-powered-gallery\frontend FLUTTER_ROOT=C:\flutter_windows_1.17.4-stable\flutter FLUTTER_EPHEMERAL_DIR=G:\Projects\ml-powered-gallery\frontend\windows\flutter\ephemeral PROJECT_DIR=G:\Projects\ml-powered-gallery\frontend FLUTTER_TARGET=G:\Projects\ml-powered-gallery\frontend\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=G:\Projects\ml-powered-gallery\frontend\.dart_tool\package_config.json C:/flutter_windows_1.17.4-stable/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\PROJECTS\ML-POWERED-GALLERY\FRONTEND\BUILD\WINDOWS\CMAKEFILES\A01A6B74FE6690A2831DF28B9C1F1A91\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\PROJECTS\ML-POWERED-GALLERY\FRONTEND\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Projects/ml-powered-gallery/frontend/windows -BG:/Projects/ml-powered-gallery/frontend/build/windows --check-stamp-file G:/Projects/ml-powered-gallery/frontend/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

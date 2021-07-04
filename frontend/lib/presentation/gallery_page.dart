@@ -29,16 +29,16 @@ class _GalleryPageState extends State<GalleryPage> {
     _size = MediaQuery.of(context).size;
     _width = _size?.width;
     _bloc = Provider.of<GalleryBloc>(context);
-    _bloc?.addEvent(GalleryEvent(directoryUrl: Const.linuxValidDirectoryUrl));
+    _bloc?.addEvent(GalleryEvent(directoryUrl: Const.windowsValidDirectoryUrl));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title ?? Const.defaultTitle),
-        backgroundColor: Color(0xFF0CBBEC),
-      ),
+      // appBar: AppBar(
+      //   title: Text(widget.title ?? Const.defaultTitle),
+      //   backgroundColor: Color(0xFF0CBBEC),
+      // ),
       body: Row(
         children: [
           Expanded(
@@ -66,11 +66,15 @@ class _GalleryPageState extends State<GalleryPage> {
                       // }
                       late Category _prefferedCategory;
                       if (prefferedCategoryStateSnap.hasData) {
-                        _prefferedCategory = prefferedCategoryStateSnap.data?.category ?? Category.empty;
+                        _prefferedCategory =
+                            prefferedCategoryStateSnap.data?.category ??
+                                Category.empty;
                       } else {
                         _prefferedCategory = Category.empty;
                       }
-                      final List<Category> _categories = galleryStateSnap.data?.categories ?? Const.testCategories;
+                      final List<Category> _categories =
+                          galleryStateSnap.data?.categories ??
+                              Const.testCategories;
                       return ListView.builder(
                         padding: EdgeInsets.only(top: 20.0, left: 30.0),
                         itemCount: _categories.length,
@@ -78,13 +82,15 @@ class _GalleryPageState extends State<GalleryPage> {
                           return Padding(
                             padding: EdgeInsets.only(top: 10.0),
                             child: InkWell(
-                              onTap: () =>
-                                  _bloc?.addEvent(PrefferedCategoryEvent(category: _categories.elementAt(index))),
+                              onTap: () => _bloc?.addEvent(
+                                  PrefferedCategoryEvent(
+                                      category: _categories.elementAt(index))),
                               child: Text(
                                 _categories.elementAt(index).title,
                                 style: TextStyle(
                                     fontSize: 23.0,
-                                    color: _categories.elementAt(index) == _prefferedCategory &&
+                                    color: _categories.elementAt(index) ==
+                                                _prefferedCategory &&
                                             _prefferedCategory != Category.empty
                                         ? Colors.yellow
                                         : Colors.white),
@@ -124,13 +130,19 @@ class _GalleryPageState extends State<GalleryPage> {
                         builder: (context, prefferedImagesStateSnap) {
                           late List<Image> _prefferedImages;
                           if (prefferedImagesStateSnap.hasData) {
-                            _prefferedImages = prefferedImagesStateSnap.data?.prefferedImages ?? [];
+                            _prefferedImages = prefferedImagesStateSnap
+                                    .data?.prefferedImages ??
+                                [];
                           } else {
-                            _prefferedImages = galleryStateSnap.data?.gallery ?? [];
+                            _prefferedImages =
+                                galleryStateSnap.data?.gallery ?? [];
                           }
                           return SizeChangedLayoutNotifier(
                             child: GridView.count(
-                              crossAxisCount: (_width ?? 0) > Const.switchGridPageSize ? 3 : 2,
+                              crossAxisCount:
+                                  (_width ?? 0) > Const.switchGridPageSize
+                                      ? 3
+                                      : 2,
                               crossAxisSpacing: 4.0,
                               mainAxisSpacing: 8.0,
                               children: _prefferedImages,

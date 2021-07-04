@@ -1,0 +1,8 @@
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/icudtl.dat
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/flutter_windows.dll
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf

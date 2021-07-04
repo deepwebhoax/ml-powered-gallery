@@ -4,7 +4,8 @@ class Const {
   static const String defaultTitle = 'Photo Viewer';
 
   static const String linuxValidDirectoryUrl = r"documents_dataset";
-  static const String windowsValidDirectoryUrl = r"G:\Projects\documents_dataset\documents_dataset";
+  static const String windowsValidDirectoryUrl =
+      r"G:\Projects\documents_dataset\documents_dataset";
 
   static const double switchGridPageSize = 900.0;
 
@@ -15,4 +16,6 @@ class Const {
     Category('documents'),
     Category('food'),
   ];
+
+  static const String apiUrl = 'https://d1bb2b7e5823.ngrok.io';
 }

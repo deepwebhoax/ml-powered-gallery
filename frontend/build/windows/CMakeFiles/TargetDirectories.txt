@@ -1,0 +1,10 @@
+G:/Projects/ml-powered-gallery/frontend/build/windows/CMakeFiles/INSTALL.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/CMakeFiles/ALL_BUILD.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/CMakeFiles/ZERO_CHECK.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/flutter/CMakeFiles/flutter_wrapper_app.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/flutter/CMakeFiles/flutter_assemble.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/flutter/CMakeFiles/INSTALL.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/CMakeFiles/bbbb_cv_app.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/CMakeFiles/INSTALL.dir
+G:/Projects/ml-powered-gallery/frontend/build/windows/runner/CMakeFiles/ALL_BUILD.dir

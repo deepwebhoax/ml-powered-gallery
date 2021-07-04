@@ -1,0 +1,2 @@
+G:\Projects\ml-powered-gallery\frontend\build\windows\flutter\Debug\flutter_wrapper_plugin.pdb
+G:\Projects\ml-powered-gallery\frontend\build\windows\flutter\flutter_wrapper_plugin.dir\Debug\flutter_wrapper_plugin.pdb
