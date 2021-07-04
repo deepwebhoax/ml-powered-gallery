@@ -1,11 +1,12 @@
 import 'dart:io';
 
+import 'package:bbbb_cv_app/internal/const.dart';
 import 'package:flutter/widgets.dart';
 import 'package:dio/dio.dart';
 
 class ServerApiProvider {
   ServerApiProvider._() {
-    _dio = Dio(BaseOptions(baseUrl: "https://d1bb2b7e5823.ngrok.io"));
+    _dio = Dio(BaseOptions(baseUrl: Const.apiUrl));
   }
 
   static final ServerApiProvider instance = ServerApiProvider._();
